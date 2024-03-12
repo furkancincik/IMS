@@ -18,7 +18,7 @@ public class User {
         this.lastName = lastName;
         this.email = email;
         this.password = password;
-        this.job=job;
+        this.job = job;
         this.age = age;
         this.lastLogin = lastLogin;
         this.addresses = new ArrayList<>();

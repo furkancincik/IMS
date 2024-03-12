@@ -15,9 +15,23 @@ public abstract class Account implements Comparable<Account> {
     public abstract void addInsurance(Insurance insurance);
 
 
+    @Override
+    public int hashCode() {
+        int result = user.hashCode();
+        result = 31 * result + insurances.hashCode();
+        return result;
+    }
 
-    //"Account" sınıfında müşteri bilgilerini ekrana yazdıran
-    // "final" tipinde, değer döndürmeyen ve ismi "showUserInfo" bir fonksiyon tanımlayınız.
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Account account = (Account) obj;
+        return user.equals(account.user) && insurances.equals(account.insurances);
+    }
+
+
     public final void showUserInfo(){
         System.out.println("User Info:");
         System.out.println("Name: " + user.getName());
