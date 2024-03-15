@@ -1,30 +1,29 @@
-public class BusinessAddress implements Address{
+public class BusinessAddress implements Address {
     private String cityName;
     private String streetName;
     private String postalCode;
 
-    @Override
-    public void removeAddress() {
-
+    public BusinessAddress(String cityName, String streetName, String postalCode) {
+        this.cityName = cityName;
+        this.streetName = streetName;
+        this.postalCode = postalCode;
     }
 
     @Override
-    public void addAddress() {
-
+    public String getCity() {
+        System.out.println("Lutfen sehir adını giriniz");
+        return cityName;
     }
 
     @Override
-    public void getCity() {
-
+    public String getStreet() {
+        System.out.println("Lutfen sokak adı giriniz");
+        return streetName;
     }
 
     @Override
-    public void getStreet() {
-
-    }
-
-    @Override
-    public void getPostalCode() {
-
+    public String getPostalCode() {
+        System.out.println("Lutfen posta kodu giriniz: ");
+        return postalCode;
     }
 }

@@ -1,32 +1,37 @@
-public class AddressManager implements Address {
-    private String cityName;
-    private String streetName;
-    private String postalCode;
-    User user;
+import java.util.ArrayList;
 
+public class AddressManager {
+    private ArrayList<Address> homeAddresseses;
+    private ArrayList<Address> businessAddresses;
 
-    @Override
-    public void removeAddress() {
-
+    public AddressManager(){
+        this.homeAddresseses=new ArrayList<>();
+        this.businessAddresses=new ArrayList<>();
     }
 
-    @Override
-    public void addAddress() {
 
+    //ev adresi ekleme
+    public void addHomeAddress(HomeAddress homeAddress){
+        homeAddresseses.add(homeAddress);
+    }
+    //ev adresi silme
+    public void removeHomeAddress(HomeAddress homeAddress){
+        homeAddresseses.remove(homeAddress);
     }
 
-    @Override
-    public void getCity() {
-
+    //is adresi ekleme
+    public void addBusinessAddress(BusinessAddress businessAddress){
+        businessAddresses.add(businessAddress);
+    }
+    //is adresi silme
+    public void removeBusinessAddress(BusinessAddress businessAddress){
+        businessAddresses.remove(businessAddress);
     }
 
-    @Override
-    public void getStreet() {
 
-    }
 
-    @Override
-    public void getPostalCode() {
 
-    }
+
+
+
 }

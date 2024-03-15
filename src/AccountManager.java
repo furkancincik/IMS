@@ -1,39 +1,47 @@
 import java.util.Date;
-import java.util.TreeSet;
+import java.util.HashSet;
+import java.util.Set;
 
 public class AccountManager {
-    private TreeSet<Account> accounts;
+    private Set<User> users;
 
     public AccountManager() {
-        this.accounts = new TreeSet<>();
-        exampleAccount(); //Örnek hesap olusturuldu
+        this.users = new HashSet<>();
+        exampleUser(); // Örnek kullanıcı oluşturuldu
     }
 
-
-    // Örnek bir hesap oluştur
-    private void exampleAccount() {
+    // Örnek bir kullanıcı oluştur
+    private void exampleUser() {
         User user = new User("example", "user", "example@example.com", "password", "job", 25, new Date());
-        Account exampleAccount = new Individual(user);
-        accounts.add(exampleAccount);
+        users.add(user);
     }
-
 
     // Kullanıcı girişini kontrol et
-    public Account login(String email, String password) {
-        for (Account account : accounts) {
-            try {
-                AuthenticationStatus status = account.login(email, password);
-                if (status.equals(AuthenticationStatus.SUCCESS)) {
-                    return account; // Giriş başarılıysa hesabı döndür
-                }
-            } catch (InvalidAuthenticationException e) {
-                // Geçersiz kimlik doğrulaması durumunda devam et
-                System.out.println("Giriş başarısız. !!!");
+    public User login(String email, String password) throws InvalidAuthenticationException {
+        for (User user : users) {
+            if (user.getEmail().equals(email) && user.getPassword().equals(password)) {
+                return user; // Giriş başarılıysa kullanıcıyı döndür
             }
         }
-        // Hiçbir hesap giriş yapamadıysa null döndür
-        return null;
+        // Hiçbir kullanıcı giriş yapamadıysa InvalidAuthenticationException fırlat
+        throw new InvalidAuthenticationException("Giriş başarısız.");
+    }
+
+    // Yeni hesap oluştur
+    public User createUser(String name,String lastName,String email,String password,String job,int age,Date date){
+        User newUser=new User(name,lastName,email,password,job,age,date);
+        addUser(newUser); //yeni kullanıcıyı listeye ekledik
+
+        return newUser;
     }
 
 
+
+    public Set<User> getUsers() {
+        return users;
+    }
+
+    public void addUser(User newUser) {
+        users.add(newUser);
+    }
 }
