@@ -42,6 +42,11 @@ public class Panel {
                     String email = inp.next();
                     System.out.print("Şifre: ");
                     String password = inp.next();
+
+                    // bu kısıma kullanıcı kontrol mekanızması ve
+                    //icerisinde de password kontrol mekanızmasi ekle
+                    //ikisi ic ice saglanırsa giris yapsın
+                    // kullanıc adı uyusmazsa ana menöyüe atıp bir uyarı mesaj versin
                     try {
                         // Kullanıcı girişini kontrol et
                         user = accountManager.login(email, password);
