@@ -6,24 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1c42fa3d-d798-49db-9510-3745bc40d380" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AccountManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AddressManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddressManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuthenticationStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthenticationStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BusinessAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusinessAddress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CarInsurance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarInsurance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Enterprise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enterprise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HealthInsurance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HealthInsurance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomeAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeAddress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Individual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Individual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Insurance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Insurance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Panel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PanelRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanelRun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ResidenceInsurance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResidenceInsurance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TravelInsurance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TravelInsurance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
