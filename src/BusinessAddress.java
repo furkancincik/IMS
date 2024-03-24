@@ -11,19 +11,19 @@ public class BusinessAddress implements Address {
 
     @Override
     public String getCity() {
-        System.out.println("Lutfen sehir adını giriniz");
+        System.out.println("Lütfen şehir adını giriniz: ");
         return cityName;
     }
 
     @Override
     public String getStreet() {
-        System.out.println("Lutfen sokak adı giriniz");
+        System.out.println("Lütfen sokak adını giriniz: ");
         return streetName;
     }
 
     @Override
     public String getPostalCode() {
-        System.out.println("Lutfen posta kodu giriniz: ");
+        System.out.println("Lütfen posta kodunu giriniz: ");
         return postalCode;
     }
 }

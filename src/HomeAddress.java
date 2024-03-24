@@ -24,4 +24,3 @@ public class HomeAddress implements Address {
         return postalCode;
     }
 }
-

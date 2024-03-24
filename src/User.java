@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -9,9 +8,8 @@ public class User {
     private String password;
     private String job;
     private int age;
-    ArrayList<Address> addresses;
+    private ArrayList<Address> addresses;
     private Date lastLogin;
-
 
     public User(String name, String lastName, String email, String password, String job, int age, Date lastLogin) {
         this.name = name;

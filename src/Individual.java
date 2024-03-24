@@ -1,14 +1,15 @@
 import java.util.ArrayList;
 
-public abstract class Individual extends Account{
-    public Individual(User user){
-        this.user=user;
-        this.insurances=new ArrayList<>();
+public abstract class Individual extends Account {
+    public Individual(User user) {
+        this.user = user;
+        this.insurances = new ArrayList<>();
     }
 
     @Override
     public AuthenticationStatus login(String email, String password) throws InvalidAuthenticationException {
         System.out.println("Giriş yapıldı veya yapılamadı");
+        // Burada gerçek bir giriş kontrolü yapılabilir, ancak bu örnekte basit bir mesaj bastırıldı.
         return null;
     }
 
@@ -24,8 +25,6 @@ public abstract class Individual extends Account{
 
     @Override
     public void addInsurance(Insurance insurance) {
-        System.out.println("Sigotrta eklendi");
+        System.out.println("Sigorta eklendi");
     }
-
-
 }

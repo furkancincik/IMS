@@ -16,10 +16,12 @@ public class AccountManager {
         users.add(user);
     }
 
-    // Kullanıcı girişini kontrol et
+
+
+    // login metodu
     public User login(String email, String password) throws InvalidAuthenticationException {
         for (User user : users) {
-            if (user.getEmail().equals(email) && user.getPassword().equals(password)) {
+            if (user.getEmail().equalsIgnoreCase(email) && user.getPassword().equals(password)) {
                 return user; // Giriş başarılıysa kullanıcıyı döndür
             }
         }
@@ -27,21 +29,34 @@ public class AccountManager {
         throw new InvalidAuthenticationException("Giriş başarısız.");
     }
 
-    // Yeni hesap oluştur
-    public User createUser(String name,String lastName,String email,String password,String job,int age,Date date){
-        User newUser=new User(name,lastName,email,password,job,age,date);
-        addUser(newUser); //yeni kullanıcıyı listeye ekledik
 
+
+    // Yeni hesap oluştur
+    public User createUser(String name, String lastName, String email, String password, String job, int age, Date date) {
+        User newUser = new User(name, lastName, email, password, job, age, date);
+        addUser(newUser); // Yeni kullanıcıyı listeye ekle
         return newUser;
     }
-
-
 
     public Set<User> getUsers() {
         return users;
     }
 
     public void addUser(User newUser) {
-        users.add(newUser);
+        boolean userExists = false;
+        for (User user : users) {
+            if (user.getEmail().equalsIgnoreCase(newUser.getEmail())) {
+                userExists = true;
+                break;
+            }
+        }
+        if (!userExists) {
+            users.add(newUser); // HashSet'e yeni kullanıcıyı ekleyin
+            System.out.println("Kullanıcı başarıyla eklendi.");
+        } else {
+            System.out.println("Bu e-posta ile zaten kayıtlı bir kullanıcı var.");
+        }
     }
+
+
 }

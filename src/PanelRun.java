@@ -1,16 +1,11 @@
 import java.util.*;
 
 public class PanelRun {
-    static AccountManager accountManager=new AccountManager();
+    static AccountManager accountManager = new AccountManager();
     static AddressManager addressManager = new AddressManager();
-     private static Scanner inp = new Scanner(System.in);
+    private static Scanner inp = new Scanner(System.in);
 
-
-
-
-
-
-    //createUser metodunu burada döngüye sok
+    // createUser metodunu burada döngüye sok
     public Set<User> addUser(){
         System.out.println("---- YENI HESAP OLUSTURMA MENUSU ----");
         System.out.println("---- 1- BIREYSEL                 ----");
@@ -50,7 +45,8 @@ public class PanelRun {
                 inp.nextLine();
 
                 Date date=new Date();
-                accountManager.addUser(accountManager.createUser(name,lastName,email,password,job,age,date));
+                User newUser = accountManager.createUser(name, lastName, email, password, job, age, date);
+                accountManager.addUser(newUser); // Yeni kullanıcıyı hesaplara ekle
                 break;
 
             case 2:
@@ -78,22 +74,12 @@ public class PanelRun {
 
                 Date date2=new Date();
 
-                accountManager.addUser(accountManager.createUser(name2,lastName2,email2,password2,job2,age2,date2));
+                User newUser2 = accountManager.createUser(name2, lastName2, email2, password2, job2, age2, date2);
+                accountManager.addUser(newUser2); // Yeni kullanıcıyı hesaplara ekle
                 break;
 
         }
 
         return accountManager.getUsers();
     }
-
-
-
-
-
-
-
-
-
-
-
 }

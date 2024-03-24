@@ -1,6 +1,4 @@
 import java.util.Scanner;
-import java.util.Date;
-import java.util.Set;
 
 public class Panel {
     static User user;
@@ -9,7 +7,7 @@ public class Panel {
     static Address address;
     static Insurance insurance;
     static Scanner inp = new Scanner(System.in);
-    static PanelRun panelRun=new PanelRun();
+    static PanelRun panelRun = new PanelRun();
 
     public void run() {
         accountManager = new AccountManager(); // AccountManager başlatıldı
@@ -31,10 +29,10 @@ public class Panel {
             }
 
             int preference = inp.nextInt();
-            switch (preference){
+            switch (preference) {
                 case 0:
                     System.out.println("Çıkış Yapılıyor");
-                    isRun=false;
+                    isRun = false;
                     break;
                 case 1:
                     System.out.println("Login işlemi yapılır");
@@ -43,33 +41,22 @@ public class Panel {
                     System.out.print("Şifre: ");
                     String password = inp.next();
 
-                    // bu kısıma kullanıcı kontrol mekanızması ve
-                    //icerisinde de password kontrol mekanızmasi ekle
-                    //ikisi ic ice saglanırsa giris yapsın
-                    // kullanıc adı uyusmazsa ana menöyüe atıp bir uyarı mesaj versin
                     try {
                         // Kullanıcı girişini kontrol et
                         user = accountManager.login(email, password);
-                        System.out.println("GIRIS BASARILI ! ");
+                        System.out.println("Giriş başarılı! Hoş geldiniz, " + user.getName() + "!");
                     } catch (InvalidAuthenticationException e) {
                         System.out.println(e.getMessage());
                     }
                     break;
 
                 case 2:
-                    // Yeni hesap oluşturma işlemi burade gerceklesecek
-                    Set<User> users = panelRun.addUser();
-
+                    // Yeni hesap oluşturma işlemi burada gerçekleşecek
+                    panelRun.addUser();
                     break;
                 default:
                     System.out.println("Geçersiz Seçenek");
             }
         }
     }
-
-
-
-
-
-
 }

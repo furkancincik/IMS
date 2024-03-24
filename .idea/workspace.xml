@@ -7,7 +7,23 @@
     <list default="true" id="1c42fa3d-d798-49db-9510-3745bc40d380" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AccountManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddressManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddressManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuthenticationStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthenticationStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BusinessAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusinessAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CarInsurance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarInsurance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Enterprise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enterprise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HealthInsurance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HealthInsurance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Individual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Individual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Insurance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Insurance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Panel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PanelRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanelRun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ResidenceInsurance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResidenceInsurance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TravelInsurance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TravelInsurance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,16 +53,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/furkancincik/Desktop/JavaProject/IMS/src/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "/Users/furkancincik/Desktop/JavaProject/IMS/src/Main.java"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
